@@ -20,7 +20,10 @@ Streamline the process of adding Appcoins SDK to your Unity app through importin
 ### Step 2 - Add AptoPurchaseManager to the Main Camera game object + Set Params
 * Select the Game Object, on the Inspector panel scroll to bottom
 * Add Component, search for AptoPurchaseManager
-* Set the params of KEY, SKU (string divided by ";")** and Developer Payload 
+* Set the params of KEY, SKU (string divided by ";")** and Developer Payload
+
+<img width="1435" alt="Screenshot 2024-08-09 at 11 33 34" src="https://github.com/user-attachments/assets/9c385ff9-d8d1-44f6-b343-7a0bf02c0e6a">
+
 
 ### Step 3 - Setup the Purchase Button 
 * Select the Play button, on the Inspector panel scroll to bottom
@@ -28,10 +31,16 @@ Streamline the process of adding Appcoins SDK to your Unity app through importin
 * Drag and drop the Main Camera to the box under Runtime (on OnClick section) 
 * After that select the Script AptoPurchaseManager and the method StartPurchase , to which you can set the sku**
 
+<img width="1430" alt="Screenshot 2024-08-09 at 11 34 30" src="https://github.com/user-attachments/assets/c7464974-bbf4-495e-9198-4b1f0822c62d">
+
+
 ### Step 4 - Setup the Consume Item Button
 * Select the Consume button and in the inspector on the bottom add on the on click a new entry 
 * Drag and drop the Main Camera to the box under Runtime (on OnClick section) 
 * After that select the Script AptoPurchaseManager and the method ConsumeItem **
+
+<img width="1422" alt="Screenshot 2024-08-09 at 11 34 43" src="https://github.com/user-attachments/assets/9b86977b-4c09-4c06-a75b-8a4a23ee7424">
+
 
 ### Step 5 - Setup Manifest File
 * Open the Manifest file (or create one in your Assets folder) and update the package name to your project 
