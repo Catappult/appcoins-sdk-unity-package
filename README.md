@@ -15,11 +15,11 @@ Streamline the process of adding Appcoins SDK to your Unity app through importin
 ### Step 1 - Import Package
 * Start by opening on the top menu bar the Window > Package Manager
 * In the new window on the top left corner click on the + sign and select Import via git URL and paste the following link: [https://github.com/Aptoide/appcoins-sdk-unity-package](https://github.com/Catappult/appcoins-sdk-unity-package)
- * Wait to import and compile all files
+* Wait to import and compile all files
 
 ### Step 2 - Add AptoPurchaseManager to the Main Camera game object + Set Params
 * Select the Game Object, on the Inspector panel scroll to bottom
- * Add Component, search for AptoPurchaseManager
+* Add Component, search for AptoPurchaseManager
 * Set the params of KEY, SKU (string divided by ";")** and Developer Payload 
 
 ### Step 3 - Setup the Purchase Button 
@@ -46,10 +46,11 @@ Streamline the process of adding Appcoins SDK to your Unity app through importin
 
 After that you can run and you have successfully integrate the Appcoins SDK on your Unity App through Package Manager.
 
-
-** ADDITIONAL NOTES
-This is a demo project to test integration, you should perform consumption after purchase of the item
-The SKUs can be set on the AptoPurchaseManager SKU (Inspector of MainCamera - Game Object) or through AptoPurchaseManager Script accessing your backend and setting the string
-You also can dinamically atribute the SKU para of the button and pass the SKU once calling the StartPurchase
+<br /><br />
+### **ADDITIONAL NOTES
+> [!NOTE]
+> This is a demo project to test integration, you should perform consumption after purchase of the item<br />
+> The SKUs can be set on the AptoPurchaseManager SKU (Inspector of MainCamera - Game Object) or through AptoPurchaseManager Script accessing your backend and setting the string<br />
+> You also can dinamically atribute the SKU para of the button and pass the SKU once calling the StartPurchase
 
 
