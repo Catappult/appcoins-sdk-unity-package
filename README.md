@@ -562,7 +562,14 @@ public class AppCoinsAdapter {
 ```
 
 
-After that you can run and you have successfully integrate the Appcoins SDK on your Unity App through Package Manager.
+After that you can run and you have successfully integrate the Appcoins SDK on your Unity App through Package Manager. Your project should look like this:
+
+- Assets Folder (with the Android Manifest, Graddle files, AppCoinsAdapter and OverrideExample) + Plugin Imported on Packages Folder
+
+<img width="614" alt="Screenshot 2024-08-09 at 11 31 33" src="https://github.com/user-attachments/assets/ddb0b917-7053-48d3-887c-1ed58336ec3c">
+
+
+
 
 <br /><br />
 ### **ADDITIONAL NOTES
