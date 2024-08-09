@@ -37,8 +37,40 @@ Streamline the process of adding Appcoins SDK to your Unity app through importin
 * Open the Manifest file (or create one in your Assets folder) and update the package name to your project 
 * Set as well the queries and permissions
 
+```
+<manifest>
+  ...
+  <queries>
+    <!-- Required to work with Android 11 and above -->
+    <package android:name="com.appcoins.wallet" />
+    ...
+  </queries>
+  ...
+  <uses-permission android:name="com.appcoins.BILLING" />
+	<uses-permission android:name="android.permission.INTERNET" />
+  ...
+  <activity android:name="com.appcoins.sdk.billing.WebIapCommunicationActivity"
+        android:exported="true">
+  	<intent-filter>
+      <action android:name="android.intent.action.VIEW"/>
+      <category android:name="android.intent.category.DEFAULT"/>
+      <category android:name="android.intent.category.BROWSABLE" />
+    	<data android:scheme="web-iap-result" android:host="PACKAGE_OF_YOUR_APPLICATION"/>
+  	</intent-filter>
+  </activity>
+  ...
+</manifest>
+```
+
 ### Step 6 - Setup Build Graddle
 * Add the implementation to import sdk
+
+```
+dependencies {
+  implementation("io.catappult:android-appcoins-billing:0.8.0.3") //check the latest version in mvnrepository
+	<...other dependencies..>
+}
+```
 
 ### Step 7 - Add OverrideExample and AppCoinsAdapter
 * Update as well on the OverrideExample the line 1 package name and the line 27 on the getSharedPreferences
